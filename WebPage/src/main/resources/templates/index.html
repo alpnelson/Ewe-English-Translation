@@ -64,10 +64,15 @@
         <!-- Add more language options here -->
     </select>
 
-    <label for="textInput">Enter Text:</label>
-    <textarea id="textInput" rows="6" cols="50"></textarea>
+<!--    <label for="textInput">Enter Text:</label>-->
+<!--    <textarea id="textInput" rows="6" cols="50"></textarea>-->
 
-    <button id="translateButton">Translate</button>
+<!--    <button id="translateButton">Translate</button>-->
+    <form action="/predict" method="post">
+        <textarea id="inputText" rows="6" cols="50"></textarea>
+        <button type="submit">Translate</button>
+    </form>
+
 
     <h2>Translated Text</h2>
     <div id="translatedText"></div>
