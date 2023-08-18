@@ -57,22 +57,24 @@
 </header>
 <div class="container">
     <label for="languageSelector">Select Language:</label>
-    <select id="languageSelector">
-        <option value="en">English</option>
-        <option value="es">Ewe</option>
+<!--    <select id="languageSelector">-->
+<!--        <option value="en">English</option>-->
+<!--        <option value="es">Ewe</option>-->
 
-        <!-- Add more language options here -->
-    </select>
+<!--        &lt;!&ndash; Add more language options here &ndash;&gt;-->
+<!--    </select>-->
 
-<!--    <label for="textInput">Enter Text:</label>-->
-<!--    <textarea id="textInput" rows="6" cols="50"></textarea>-->
+    <form action="/translate" method="post" id="languageSelector">
+        <select name="sourceLanguage">
+            <option value="en">Ewe</option>
+            <option value="es">English</option>
+            <!-- Add more language options -->
+        </select>
 
-<!--    <button id="translateButton">Translate</button>-->
-    <form action="/predict" method="post">
-        <textarea id="inputText" rows="6" cols="50"></textarea>
+        <textarea name="inputText" rows="5" cols="50" placeholder="Enter text to translate"></textarea>
+
         <button type="submit">Translate</button>
     </form>
-
 
     <h2>Translated Text</h2>
     <div id="translatedText"></div>
