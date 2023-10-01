@@ -2,6 +2,7 @@
 
 - kofi
 - ama
+- Atikel
 
 This repo is about using machine learning for language translation,i.e Ewe language to to English and vice versa
 
