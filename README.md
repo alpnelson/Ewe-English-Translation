@@ -8,4 +8,5 @@ Given the popularity of the language, it is imperative to have a dependable tran
 
 # Created Asante Branch. 
 * Step 1
-* step 2
+* Step 2
+* Step 3
